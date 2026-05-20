@@ -112,9 +112,10 @@
         </div>
 
         <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00Dg500000AWjXK" method="POST">
-
+           
+            <input type="hidden" name="recordType" value="012g5000002R7NdAAK">
             <input type="hidden" name="orgid" value="00Dg500000AWjXK">
-            <!-- <input type="hidden" name="retURL" value="https://www.salesforce.com"> -->
+            <input type="hidden" name="retURL" value="https://www.salesforce.com">
 
             <div class="form-group">
                 <label for="name">Contact Name</label>
@@ -127,7 +128,7 @@
             </div>
 
             <div class="form-group">
-                <label for="subject">Subject</label>
+                <label for="subject">Subject</label> 
                 <input id="subject" maxlength="80" name="subject" type="text" placeholder="case subject" required />
             </div>
 
