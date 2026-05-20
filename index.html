@@ -108,32 +108,32 @@
         <div class="header">
             <div class="logo-placeholder">☁️</div>
             <h2>Acme Corp Support</h2>
-            <p>Submit your request below. Our VIP Service Team will assist you immediately.</p>
+            <p>Submit your request below.</p>
         </div>
 
         <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00Dg500000AWjXK" method="POST">
 
             <input type="hidden" name="orgid" value="00Dg500000AWjXK">
-            <input type="hidden" name="retURL" value="https://www.salesforce.com">
+            <!-- <input type="hidden" name="retURL" value="https://www.salesforce.com"> -->
 
             <div class="form-group">
                 <label for="name">Contact Name</label>
-                <input id="name" maxlength="80" name="name" type="text" placeholder="e.g. Damian Director" required />
+                <input id="name" maxlength="80" name="name" type="text" placeholder="your name" required />
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input id="email" maxlength="80" name="email" type="text" placeholder="e.g. damian@acme.com" required />
+                <input id="email" maxlength="80" name="email" type="text" placeholder="your email" required />
             </div>
 
             <div class="form-group">
                 <label for="subject">Subject</label>
-                <input id="subject" maxlength="80" name="subject" type="text" placeholder="Brief summary of the issue" required />
+                <input id="subject" maxlength="80" name="subject" type="text" placeholder="case subject" required />
             </div>
 
             <div class="form-group">
                 <label for="description">Description</label>
-                <textarea name="description" id="description" placeholder="Please provide more details here..." required></textarea>
+                <textarea name="description" id="description" placeholder="issue description" required></textarea>
             </div>
 
             <input type="submit" name="submit" value="Submit Case">
